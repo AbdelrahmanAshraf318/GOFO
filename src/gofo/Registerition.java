@@ -143,27 +143,27 @@ public class Registerition {
 
     
     
-    public boolean CheckOwner(String Name , String Password)
+    public boolean CheckOwner(String email , String Password)
     {
            for(int i=0 ; i<Owners.size() ; i++){
-	        if(Owners.get(i).getName().equalsIgnoreCase(Name) && Owners.get(i).getPassword().equals(Password))
+	        if(Owners.get(i).getEmail().equalsIgnoreCase(email) && Owners.get(i).getPassword().equals(Password))
                 {
                     return true;
                 }
 	   }
         return false;
     }
-    public boolean CheckAdmin(String Name , String Password)
+    public boolean CheckAdmin(String email , String Password)
     {
            for(int i=0 ; i<admin.size() ; i++){
-	        if(admin.get(i).getName().equalsIgnoreCase(Name) && admin.get(i).getPassword().equals(Password))
+	        if(admin.get(i).getEmail().equalsIgnoreCase(email) && admin.get(i).getPassword().equals(Password))
                 {
                     return true;
                 }
 	   }
         return false;
     }
-    public boolean Checkplayer(String Name , String Password)
+    public boolean Checkplayer(String email , String Password)
     {
         if(players.size()==0)
         {
@@ -172,7 +172,7 @@ public class Registerition {
         else
         {
             for(int i=0 ; i<players.size() ; i++){
-	        if(players.get(i).getName().equalsIgnoreCase(Name) && players.get(i).getPassword().equals(Password))
+	        if(players.get(i).getEmail().equalsIgnoreCase(email) && players.get(i).getPassword().equals(Password))
                 {
                     return true;
                 } 

@@ -56,13 +56,12 @@ public class GOFO {
              chooseForSmallMenu = input.nextInt();
              if(chooseForSmallMenu==1)
              {
-                 System.out.println("Enter Your Name: ");
-                 input.nextLine();
-                  Name = input.nextLine();
+                 System.out.println("Enter Your Email: ");
+                  String email = input.next();
                   System.out.println("Enter Your Password: ");
                   Password = input.next();
                    boolean passed = true;
-                   passed = passed & Reg.CheckOwner(Name, Password);
+                   passed = passed & Reg.CheckOwner(email , Password);
                    if(passed==true)
                    {
                        int choice3 = 0;
@@ -114,13 +113,12 @@ public class GOFO {
              }
              else if(chooseForSmallMenu==2)
              {
-                 System.out.println("Enter Your Name: ");
-                 input.nextLine();
-                  Name = input.nextLine();
+                 System.out.println("Enter Your Email: ");
+                 String email2 = input.next();
                      System.out.println("Enter Your Password: ");
-                  Password = input.nextLine();
+                  Password = input.next();
                    boolean passed = true;
-                   passed = passed & Reg.Checkplayer(Name, Password);
+                   passed = passed & Reg.Checkplayer(email2 , Password);
                    if(passed==true)
                    {
                         while (true) {
@@ -192,13 +190,12 @@ public class GOFO {
              }
              else if(chooseForSmallMenu==3)
              {
-                 System.out.println("Enter Your Name: ");
-                     input.nextLine();
-                  Name = input.nextLine();
+                 System.out.println("Enter Your Email: ");
+                  String email2 = input.next();
                      System.out.println("Enter Your Password: ");
                   Password = input.next();
                    boolean passed = true;
-                   passed = passed & Reg.CheckAdmin(Name, Password);
+                   passed = passed & Reg.CheckAdmin(email2 , Password);
                    if(passed==true)
                    {
                        int c2 = 0;
